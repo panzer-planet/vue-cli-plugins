@@ -21,7 +21,7 @@ module.exports = (api, options) => {
       api.chainWebpack(config => {
         config
           .plugin('VuetifyLoaderPlugin')
-          .use(VuetifyLoaderPlugin, [options.pluginOptions.vuetify])
+          .use(VuetifyLoaderPlugin, [options.pluginOptions?.vuetify])
       })
     }
     else {
